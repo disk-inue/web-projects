@@ -1,0 +1,138 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+@font-face {
+  font-family: "Robot";
+  src: url("fonts/Roboto-Regular.ttf");
+}
+
+html {
+  font-family: "Robot";
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h1,
+h2,
+p {
+  letter-spacing: 0.2rem;
+}
+
+p,
+li {
+  font-size: 1.2rem;
+  line-height: 1.2;
+  word-spacing: 0.1rem;
+}
+
+li {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  word-spacing: 0.1rem;
+}
+
+ul {
+  list-style-type: square;
+}
+
+section h1+p,
+section h2+p {
+  text-indent: 2rem;
+}
+
+a:visited,
+a:hover,
+a:focus {
+  color: #a66;
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a {
+  color: #a66;
+  outline: none;
+}
+
+a:active {
+  color: red;
+  font-weight: bold;
+}
+
+a[href^="http"] {
+  background: url(external-link-52.png) no-repeat 100% 0;
+  background-size: 12px 12px;
+  padding-right: 19px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  padding: 2rem;
+  border: 0.1rem solid #a66;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
